@@ -4,14 +4,14 @@
 
 
     @include('frontend.home.landing')
-    @include('frontend.home.cta')
-    @include('frontend.home.imageconverter')
-@include('frontend.home.secondcta')
+   
+   
+
 
 
 @include('frontend.home.whyus')
 
-    @include('frontend.home.fourthcta')
+   
 
 
 

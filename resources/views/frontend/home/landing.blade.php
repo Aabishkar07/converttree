@@ -1,61 +1,196 @@
-<!-- Hero Section -->
-    <section id="home" class="text-white py-10 relative overflow-hidden" style="background: linear-gradient(135deg, #6a6bcf 0%, #5a5bbf 50%, #4a4baf 100%);">
-        <!-- Background Pattern -->
-        <div class="absolute inset-0 opacity-10">
-            <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white to-transparent transform -skew-y-12"></div>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConvertTree - File Conversion Tools</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- 3-Column LinkedIn-Style Layout -->
+    <section class="bg-[#F3F2EF] min-h-screen py-6">
+        <div class="max-w-[1400px] mx-auto px-4">
+            <div class="grid grid-cols-12 gap-6">
+                
+                <!-- LEFT SIDEBAR - Essential Tools -->
+                <aside class="col-span-12 xl:col-span-3">
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-5 sticky top-20">
+                        <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-5">
+                            TOOLS
+                        </h3>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <div class="mb-6">
-                <span class="inline-block px-4 py-2 bg-white/20 rounded-full text-sm font-medium mb-4">
-                    100% Free  - No Registration Required
-                </span>
-            </div>
+                        <div class="space-y-3">
+                            <a href="#image" class="flex items-center gap-2 text-gray-700 hover:text-purple-600 transition-colors group">
+                                <div class="w-8 h-8 bg-purple-50 rounded-lg flex items-center justify-center group-hover:bg-purple-100">
+                                    <svg class="w-4 h-4 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                                <span class="text-sm font-medium">Images</span>
+                            </a>
 
-            <h1 class="text-3xl md:text-5xl font-bold mb-6 text-white leading-tight">
-    Everything You Need, One Platform
-            </h1>
-            <p class="text-sm md:text-xl mb-8 opacity-90 max-w-3xl mx-auto">
-    Convert images, PDFs, and documents, and send bulk emails all in one powerful platform : ConvertTree.
-            </p>
+                            <a href="#pdf" class="flex items-center gap-2 text-gray-400">
+                                <div class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="text-sm font-medium block">PDF</span>
+                                    <span class="text-xs text-purple-600">Soon</span>
+                                </div>
+                            </a>
 
-            <!-- Supported Categories -->
-            <div class="flex justify-center flex-wrap gap-3 mb-8">
-                <span class="px-4 py-2 bg-white/20 rounded-full text-sm font-medium">📸 Images</span>
-                <span class="px-4 py-2 bg-white/20 rounded-full text-sm font-medium">📄 PDFs</span>
-                <span class="px-4 py-2 bg-white/20 rounded-full text-sm font-medium">📝 Documents</span>
-                <span class="px-4 py-2 bg-white/20 rounded-full text-sm font-medium">� Bulk Email</span>
-            </div>
+                            <a href="#document" class="flex items-center gap-2 text-gray-400">
+                                <div class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="text-sm font-medium block">Docs</span>
+                                    <span class="text-xs text-purple-600">Soon</span>
+                                </div>
+                            </a>
 
-            <!-- <div class="flex justify-center gap-4 flex-wrap">
-                <a href="https://image.converttree.com/" target="_blank" class="bg-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:-translate-y-1 shadow-lg" style="color: #6a6bcf;">
-                    Start Converting Free
-                </a>
-                <a href="#image" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg  transition-all duration-300 transform hover:-translate-y-1" style="hover:color: #6a6bcf;">
-                    View All Tools
-                </a>
-            </div> -->
+                            <a href="#email" class="flex items-center gap-2 text-gray-400">
+                                <div class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="text-sm font-medium block">Email</span>
+                                    <span class="text-xs text-purple-600">Soon</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
 
-            <!-- Trust Indicators -->
-            <div class="mt-12 flex justify-center items-center gap-8 flex-wrap text-white opacity-80">
-                <div class="flex items-center gap-2">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                    </svg>
-                    <span class="text-sm">No File Size Limits</span>
-                </div>
-                <div class="flex items-center gap-2">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
-                    </svg>
-                    <span class="text-sm">Secure & Private</span>
-                </div>
-                <div class="flex items-center gap-2">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
-                    </svg>
-                    <span class="text-sm">Lightning Fast</span>
-                </div>
+                <!-- CENTER - All 4 Converter Cards -->
+                <main class="col-span-12 xl:col-span-6">
+                    <!-- Grid: 2 cards per row on desktop -->
+                    <div class="grid md:grid-cols-2 gap-6">
+                        
+                        <!-- IMAGE CONVERTER CARD -->
+                        <div id="image" class="bg-white rounded-lg shadow-sm border border-gray-200 p-4 hover:shadow-md transition-shadow">
+                            <div class="flex items-center gap-2 mb-3">
+                                <div class="w-9 h-9 bg-purple-50 rounded-lg flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-gray-900 text-sm">Image Converter</h3>
+                                    <p class="text-xs text-gray-500">25+ formats</p>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 px-3 py-4">
+                                <p class="text-sm text-gray-500 leading-relaxed">
+                                    Convert images between 25+ formats including PNG, JPG, WEBP, HEIC, and more.
+                                </p>
+                            </div>
+
+                            <a href="https://image.converttree.com/" target="_blank" class="block w-full py-2 bg-purple-600 text-white text-center text-xs font-semibold rounded-md hover:bg-purple-700 transition-all">
+                                Convert Now →
+                            </a>
+                        </div>
+
+                        <!-- PDF CONVERTER CARD -->
+                        <div id="pdf" class="bg-white rounded-lg shadow-sm border border-gray-200 p-4 hover:shadow-md transition-shadow opacity-70">
+                            <div class="flex items-center gap-2 mb-3">
+                                <div class="w-9 h-9 bg-blue-50 rounded-lg flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-gray-900 text-sm">PDF Converter</h3>
+                                    <p class="text-xs text-purple-600 font-medium">Coming Soon</p>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 px-3 py-4">
+                                <p class="text-sm text-gray-500 leading-relaxed">
+                                    Convert PDFs to various formats and merge multiple PDFs into one. Full PDF toolkit launching soon.
+                                </p>
+                            </div>
+
+                            <button disabled class="block w-full py-2 bg-gray-300 text-gray-500 text-center text-xs font-semibold rounded-md cursor-not-allowed">
+                                Coming Q1 2025
+                            </button>
+                        </div>
+
+                        <!-- DOCUMENT CONVERTER CARD -->
+                        <div id="document" class="bg-white rounded-lg shadow-sm border border-gray-200 p-4 hover:shadow-md transition-shadow opacity-70">
+                            <div class="flex items-center gap-2 mb-3">
+                                <div class="w-9 h-9 bg-green-50 rounded-lg flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-gray-900 text-sm">Document Converter</h3>
+                                    <p class="text-xs text-purple-600 font-medium">Coming Soon</p>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 px-3 py-4">
+                                <p class="text-sm text-gray-500 leading-relaxed">
+                                    Convert between Word, PDF, TXT and other document formats seamlessly.
+                                </p>
+                            </div>
+
+                            <button disabled class="block w-full py-2 bg-gray-300 text-gray-500 text-center text-xs font-semibold rounded-md cursor-not-allowed">
+                                Coming Q1 2025
+                            </button>
+                        </div>
+
+                        <!-- BULK EMAIL CARD -->
+                        <div id="email" class="bg-white rounded-lg shadow-sm border border-gray-200 p-4 hover:shadow-md transition-shadow opacity-70">
+                            <div class="flex items-center gap-2 mb-3">
+                                <div class="w-9 h-9 bg-orange-50 rounded-lg flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-gray-900 text-sm">Bulk Email Sender</h3>
+                                    <p class="text-xs text-purple-600 font-medium">Coming Soon</p>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 px-3 py-4">
+                                <p class="text-sm text-gray-500 leading-relaxed">
+                                    Send personalized bulk emails with templates, scheduling, and analytics tracking.
+                                </p>
+                            </div>
+
+                            <button disabled class="block w-full py-2 bg-gray-300 text-gray-500 text-center text-xs font-semibold rounded-md cursor-not-allowed">
+                                Coming Q2 2025
+                            </button>
+                        </div>
+
+                    </div>
+                </main>
+
+                <!-- RIGHT SIDEBAR - Advertisement -->
+                <aside class="col-span-12 xl:col-span-3">
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden sticky top-20">
+                        <div class="px-4 py-2 bg-gray-50 border-b border-gray-200">
+                            <p class="text-xs text-gray-500 text-center font-medium">Ad</p>
+                        </div>
+
+                        <div class="p-4">
+                            <img src="https://arthakagaj.com/images/20240930074550ads_image.20240925025052ads_image.20240818024834ads_image.ezgif.com-animated-gif-maker.gif" alt="Advertisement" class="w-full h-auto rounded-lg">
+                        </div>
+                    </div>
+                </aside>
+
             </div>
         </div>
     </section>
+</body>
+</html>
